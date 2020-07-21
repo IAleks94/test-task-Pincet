@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Canvas" />
+    <meta name="author" lang="ru" content="Andrei Aliaksandrau" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <title>Pincet</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <img src="/img/logo.png" alt="logo" class="logo" />
+        <p class="info">Студия депиляции и массажный кабинет в Бресте</p>
+        <div class="location">
+          <img src="/img/mapRaund.png" alt="roundMap" class="roundMap" />
+          <div class="textBox">
+            <b class="locationText">Мы находимся в центре:</b> <br />
+            <span class="address">г. Брест, ул. Гоголя, д.65</span> <br />
+            <a href="#" class="lookMap">Смотреть на карте</a>
+          </div>
+          <div id="map" style="width: 300px; height: 200px"></div>
+        </div>
+        <div class="contacts">
+          <div class="phoneBox">
+            <span class="call">Звоните мы сейчас работаем</span>
+            <span class="phone">+375 33 382 24 99</span>
+          </div>
+          <div class="timeBox">
+            <span class="timeText">Пн-Вc </span><b class="timeText">9:00-21:00</b>
+          </div>
+        </div>
+        <button class="subscribe">Записаться онлайн</button>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="menu">
+          <a href="#" class="menu-link">Главная</a>
+          <a href="#" class="menu-link">Шугаринг и депиляция воском</a>
+          <a href="#" class="menu-link">Антицелюлитный массаж</a>
+          <a href="#" class="menu-link">Классический массаж</a>
+          <a href="#" class="menu-link">Обучение</a>
+          <a href="#" class="menu-link">Косметика для мастеров</a>
+          <a href="#" class="menu-link">Статьи</a>
+          <a href="#" class="menu-link">О студии</a>
+          <a href="#" class="menu-link">Контакты</a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <div class="container">
+        <div class="titleBox">
+          <h2 class="firstSectionTitle">
+            Хотите избавиться от <br />
+            <b>нежелательных волос</b> <br />
+            или нужен сеанс <br />
+            <b>антицеллюлитного массажа?</b>
+          </h2>
+        </div>
+        <div class="aboutBlock">
+          <ul class="aboutList">
+            <li>депиляция воском и Шугаринг;</li>
+            <li>профессиональные сертифицированные мастера;</li>
+            <li>работаем и с женщинами, и с мужчинами;</li>
+            <li>результат уже после первой процедуры.</li>
+          </ul>
+          <button class="getCard"><b>Получить карту клиента бесплато</b></button>
+          <button class="aboutCard">i</button>
+        </div>
+        <div class="arrowDown"></div>
+      </div>
+      <div class="popupLearn">
+        <button class="closePopup">x</button>
+        <h2 class="popupTitle"><b>Получить</b> программу обучения</h2>
+        <p class="popupText">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut
+        </p>
+        <form action="post" class="UpQualificationForm">
+          <select name="" id="">
+            <option>Повышение квалификации</option>
+          </select>
+          <input type="text" name="name" placeholder="Ваше имя" required/>
+          <input type="text" name="tel" placeholder="Ваш номер телефона" required/>
+          <button type="submit"  class="popupSubmit" >получить программу</button>
+        </form>
+      </div>
+      <div class="popupWait">
+        <button class="closePopup">x</button>
+        <p class="waitText"><b>Ваш заказ принят.</b><br>
+          Ожидайте звонка</p>
+      </div>
+    </main>
+    
+  </body>
+</html>
